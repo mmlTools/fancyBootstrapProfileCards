@@ -1,0 +1,204 @@
+.card{
+    &.fancy {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 0 0 20px #e5e5e5;
+        border: 1px solid #f8f9fa;
+        .card-header{
+            height: 150px;
+            background: none;
+            border: none;
+            position: relative;
+            padding:0;
+            .avatar{
+                width: 150px;
+                height: 150px;
+                border-radius: 100%;
+                box-shadow: 0 0 20px 0 #c9c9c9;
+                -webkit-transition: .3s all;
+                -moz-transition: .3s all;
+                -ms-transition: .3s all;
+                -o-transition: .3s all;
+                transition: .3s all;
+                position: absolute;
+                bottom: -75px;
+                left: calc(50% - 75px);
+                overflow: hidden;
+                img{
+                    width:110%;
+                }
+            }
+            .overlay-2,
+            .overlay-3,
+            .overlay-1{
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 150%;
+                transform: skewY(-10deg);
+                -webkit-transition: .3s all;
+                -moz-transition: .3s all;
+                -ms-transition: .3s all;
+                -o-transition: .3s all;
+                transition: .3s all;
+            }
+            .overlay-1{
+                top: -80%;
+                opacity: 1;
+            }
+            .overlay-2{
+                top: -60%;
+                opacity: .8;
+            }
+            .overlay-3{
+                top: -40%;
+                opacity: .6;
+            }
+        }
+        .card-footer{
+            background: none;
+            border: none;
+        }
+        &:hover{
+            .card-header{
+                .avatar{
+                    width: 180px;
+                    height: 180px;
+                    bottom: -90px;
+                    left: calc(50% - 90px);
+                }
+                .overlay-1{
+                    top: -75%;
+                    opacity: 1;
+                }
+                .overlay-2{
+                    top: -50%;
+                    opacity: .8;
+                }
+                .overlay-3{
+                    top: -35%;
+                    opacity: .6;
+                }
+            }
+        }
+        .social-link-group{
+            .fab {
+                font-size: 1.5rem;
+                -webkit-transition: all 0.3s;
+                -moz-transition: all 0.3s;
+                -ms-transition: all 0.3s;
+                -o-transition: all 0.3s;
+                transition: all 0.3s;
+                &:hover {
+                    opacity: .6;
+                }
+                &.fa-facebook {
+                    color: #4267B2;
+                }
+                &.fa-instagram {
+                    background: #f09433;
+                    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+                    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+                    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f09433", endColorstr="#bc1888", GradientType=1);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                &.fa-twitch {
+                    color: #6441a5;
+                }
+                &.fa-discord {
+                    color: #5865F2;
+                }
+                &.fa-youtube:not(.normal) {
+                    color: #FF0000;
+                }
+                &.fa-whatsapp-square {
+                    color: #25D366;
+                }
+                &.fa-whatsapp {
+                    color: #25D366;
+                }
+                &.fa-reddit-alien {
+                    color: #FF4500;
+                }
+                &.fa-deviantart {
+                    color: #05cc47;
+                }
+                &.fa-linkedin {
+                    color: #0e76a8;
+                }
+                &.fa-github {
+                    color: #171515;
+                }
+                &.fa-twitter {
+                    color: #1DA1F2;
+                }
+                &.fa-snapchat-square {
+                    color: #FFFC00;
+                }
+                &.fa-tiktok {
+                    filter: drop-shadow(-1px -2px 0 #24f6f0) brightness(110%);
+                    text-shadow: 1.6px 2px 0 #fe2d52;
+                }
+            }
+        }
+        .name{
+            font-size: 2rem;
+        }
+        .department,
+        .function{
+            color: #000;
+        }
+        &.fancy-purple{
+            .overlay-1,
+            .overlay-2,
+            .overlay-3{ background: #7045bd; }
+            .name,
+            .social{ color: #7045bd; }
+        }
+        &.fancy-info{
+            .overlay-1,
+            .overlay-2,
+            .overlay-3{ background: #138792; }
+            .name,
+            .social{ color: #138792; }
+        }
+        &.fancy-primary{
+            .overlay-1,
+            .overlay-2,
+            .overlay-3{ background: #003977; }
+            .name,
+            .social{ color: #003977; }
+        }
+        &.fancy-success{
+            .overlay-1,
+            .overlay-2,
+            .overlay-3{ background: #1d7932; }
+            .name,
+            .social{ color: #1d7932; }
+        }
+        &.fancy-warning{
+            .overlay-1,
+            .overlay-2,
+            .overlay-3{ background: #8e6c06; }
+            .name,
+            .social{ color: #8e6c06; }
+        }
+        &.fancy-danger{
+            .overlay-1,
+            .overlay-2,
+            .overlay-3{ background: #b23737; }
+            .name,
+            .social{ color: #b23737; }
+        }
+        &.fancy-fuchsia{
+            .overlay-1,
+            .overlay-2,
+            .overlay-3{ background: #8e1a4f; }
+            .name,
+            .social{ color: #8e1a4f; }
+        }
+    }
+}

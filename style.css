@@ -1,0 +1,212 @@
+.card.fancy {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 0 20px #e5e5e5;
+  border: 1px solid #f8f9fa;
+}
+.card.fancy .card-header {
+  height: 150px;
+  background: none;
+  border: none;
+  position: relative;
+  padding: 0;
+}
+.card.fancy .card-header .avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  box-shadow: 0 0 20px 0 #c9c9c9;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+  position: absolute;
+  bottom: -75px;
+  left: calc(50% - 75px);
+  overflow: hidden;
+}
+.card.fancy .card-header .avatar img {
+  width: 110%;
+}
+.card.fancy .card-header .overlay-2,
+.card.fancy .card-header .overlay-3,
+.card.fancy .card-header .overlay-1 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  transform: skewY(-10deg);
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.card.fancy .card-header .overlay-1 {
+  top: -80%;
+  opacity: 1;
+}
+.card.fancy .card-header .overlay-2 {
+  top: -60%;
+  opacity: 0.8;
+}
+.card.fancy .card-header .overlay-3 {
+  top: -40%;
+  opacity: 0.6;
+}
+.card.fancy .card-footer {
+  background: none;
+  border: none;
+}
+.card.fancy:hover .card-header .avatar {
+  width: 180px;
+  height: 180px;
+  bottom: -90px;
+  left: calc(50% - 90px);
+}
+.card.fancy:hover .card-header .overlay-1 {
+  top: -75%;
+  opacity: 1;
+}
+.card.fancy:hover .card-header .overlay-2 {
+  top: -50%;
+  opacity: 0.8;
+}
+.card.fancy:hover .card-header .overlay-3 {
+  top: -35%;
+  opacity: 0.6;
+}
+.card.fancy .social-link-group .fab {
+  font-size: 1.5rem;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.card.fancy .social-link-group .fab:hover {
+  opacity: 0.6;
+}
+.card.fancy .social-link-group .fab.fa-facebook {
+  color: #4267B2;
+}
+.card.fancy .social-link-group .fab.fa-instagram {
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f09433", endColorstr="#bc1888", GradientType=1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card.fancy .social-link-group .fab.fa-twitch {
+  color: #6441a5;
+}
+.card.fancy .social-link-group .fab.fa-discord {
+  color: #5865F2;
+}
+.card.fancy .social-link-group .fab.fa-youtube:not(.normal) {
+  color: #FF0000;
+}
+.card.fancy .social-link-group .fab.fa-whatsapp-square {
+  color: #25D366;
+}
+.card.fancy .social-link-group .fab.fa-whatsapp {
+  color: #25D366;
+}
+.card.fancy .social-link-group .fab.fa-reddit-alien {
+  color: #FF4500;
+}
+.card.fancy .social-link-group .fab.fa-deviantart {
+  color: #05cc47;
+}
+.card.fancy .social-link-group .fab.fa-linkedin {
+  color: #0e76a8;
+}
+.card.fancy .social-link-group .fab.fa-github {
+  color: #171515;
+}
+.card.fancy .social-link-group .fab.fa-twitter {
+  color: #1DA1F2;
+}
+.card.fancy .social-link-group .fab.fa-snapchat-square {
+  color: #FFFC00;
+}
+.card.fancy .social-link-group .fab.fa-tiktok {
+  filter: drop-shadow(-1px -2px 0 #24f6f0) brightness(110%);
+  text-shadow: 1.6px 2px 0 #fe2d52;
+}
+.card.fancy .name {
+  font-size: 2rem;
+}
+.card.fancy .department,
+.card.fancy .function {
+  color: #000;
+}
+.card.fancy.fancy-purple .overlay-1,
+.card.fancy.fancy-purple .overlay-2,
+.card.fancy.fancy-purple .overlay-3 {
+  background: #7045bd;
+}
+.card.fancy.fancy-purple .name,
+.card.fancy.fancy-purple .social {
+  color: #7045bd;
+}
+.card.fancy.fancy-info .overlay-1,
+.card.fancy.fancy-info .overlay-2,
+.card.fancy.fancy-info .overlay-3 {
+  background: #138792;
+}
+.card.fancy.fancy-info .name,
+.card.fancy.fancy-info .social {
+  color: #138792;
+}
+.card.fancy.fancy-primary .overlay-1,
+.card.fancy.fancy-primary .overlay-2,
+.card.fancy.fancy-primary .overlay-3 {
+  background: #003977;
+}
+.card.fancy.fancy-primary .name,
+.card.fancy.fancy-primary .social {
+  color: #003977;
+}
+.card.fancy.fancy-success .overlay-1,
+.card.fancy.fancy-success .overlay-2,
+.card.fancy.fancy-success .overlay-3 {
+  background: #1d7932;
+}
+.card.fancy.fancy-success .name,
+.card.fancy.fancy-success .social {
+  color: #1d7932;
+}
+.card.fancy.fancy-warning .overlay-1,
+.card.fancy.fancy-warning .overlay-2,
+.card.fancy.fancy-warning .overlay-3 {
+  background: #8e6c06;
+}
+.card.fancy.fancy-warning .name,
+.card.fancy.fancy-warning .social {
+  color: #8e6c06;
+}
+.card.fancy.fancy-danger .overlay-1,
+.card.fancy.fancy-danger .overlay-2,
+.card.fancy.fancy-danger .overlay-3 {
+  background: #b23737;
+}
+.card.fancy.fancy-danger .name,
+.card.fancy.fancy-danger .social {
+  color: #b23737;
+}
+.card.fancy.fancy-fuchsia .overlay-1,
+.card.fancy.fancy-fuchsia .overlay-2,
+.card.fancy.fancy-fuchsia .overlay-3 {
+  background: #8e1a4f;
+}
+.card.fancy.fancy-fuchsia .name,
+.card.fancy.fancy-fuchsia .social {
+  color: #8e1a4f;
+}
+
+/*# sourceMappingURL=style.css.map */
