@@ -1,4 +1,4 @@
-# fancyBootstrapProfileCards
+# Fancy Bootstrap profile / team cards
 Fancy animated profile cards using Bootstrap
 
 Support my snippets: https://ko-fi.com/streamcd
